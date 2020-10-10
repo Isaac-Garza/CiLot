@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageButton
+        android:id="@+id/caution_button"
+        android:layout_width="55dp"
+        android:layout_height="47dp"
+        android:layout_alignBottom="@+id/btnSubmitPoll"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="175dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:src="@drawable/warning" />
+
+    <TextView
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/textColorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/lot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStatus"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="3dp"
+        android:text="Lot:"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/border"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/status"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/poll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lot"
+        >
+
+        <RadioButton
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:checked="true"
+            android:text="@string/open"
+            android:textColor="#000000"
+            android:buttonTint="@color/colorPrimaryDark">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/moderate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:text="@string/moderate"
+            android:textColor="#000000"
+            android:buttonTint="@color/colorPrimaryDark">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:text="@string/full"
+            android:buttonTint="@color/colorPrimaryDark">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmitPoll"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poll"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/submit"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20dp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/border"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/status_text"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowRadius="10" />
+
+    <TextView
+        android:id="@+id/tvLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_text"
+        android:layout_toEndOf="@id/lot"
+        android:text="Txt"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/currentDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="-44dp"
+        android:layout_marginBottom="0dp"
+        android:text="Date"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="283dp"
+        android:layout_height="146dp"
+        android:layout_below="@+id/status_text"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toEndOf="@id/poll">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <TextView
+        android:id="@+id/fullLotBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignStart="@+id/barChart"
+        android:layout_alignTop="@+id/barChart"
+        android:layout_alignBottom="@+id/barChart"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="94dp"
+        android:background="#D3EF5350" />
+
+    <TextView
+        android:id="@+id/fullBar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/barChart"
+        android:layout_alignTop="@+id/fullLotBar"
+        android:layout_alignBottom="@+id/fullLotBar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-18dp"
+        android:layout_marginBottom="0dp"
+        android:text="80%"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/moderateBar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/barChart"
+        android:layout_alignTop="@+id/mediumLotBar"
+        android:layout_alignBottom="@+id/mediumLotBar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-18dp"
+        android:layout_marginBottom="0dp"
+        android:text="50%"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/mediumLotBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignStart="@+id/barChart"
+        android:layout_alignTop="@+id/barChart"
+        android:layout_alignBottom="@+id/barChart"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="54dp"
+        android:background="#D5FFEB3B" />
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cilot.MainActivity"
+    >
+
+        <item
+            android:id="@+id/cone_option1"
+            android:drawable="@drawable/green_thumb"
+            android:icon="@drawable/green_thumb"
+            android:title="UpVote"
+            />
+        <item
+            android:id="@+id/cone_option2"
+            android:icon="@drawable/red_thumb"
+            android:drawable="@drawable/red_thumb"
+            android:title="DownVote" />
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/user_button"
+            android:title="Profile" />
+        <item
+            android:id="@+id/lot_a1"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A1" />
+
+        <item
+            android:id="@+id/lot_a2"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A2" />
+
+        <item
+            android:id="@+id/lot_a3"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A3" />
+
+        <item
+            android:id="@+id/lot_a4"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A4" />
+
+        <item
+            android:id="@+id/lot_a5"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A5" />
+
+        <item
+            android:id="@+id/lot_a6"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A6" />
+
+
+        <item
+            android:id="@+id/lot_a7"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A7" />
+
+        <item
+            android:id="@+id/lot_a8"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A8" />
+
+        <item
+            android:id="@+id/lot_a9"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A9" />
+
+        <item
+            android:id="@+id/lot_a10"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A10" />
+
+        <item
+            android:id="@+id/lot_a11"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Lot A11" />
+
+    </group>
+
+</menu>
